@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projector photoshoot</title>
+    <style>
+      h1 {
+        color: white;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 54px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        margin-top: 30px;
+        margin-left: 60px;
+        max-width: 650px;
+      }
+      button {
+        color: #010602;
+        margin: 30px auto;
+        display: block;
+        background-color: white;
+        font-size: 18px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 15px 30px;
+        border-radius: 10px;
+        margin-bottom: 0px;
+      }
+      button:hover {
+        color: white;
+        background-color: #010602;
+        transition: all 200ms ease-in-out;
+        box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.4);
+        cursor: pointer;
+      }
+      .maine-photo {
+        max-width: 800px;
+        display: block;
+        margin: 0 auto;
+      }
+      .body-back {
+        max-width: 800px;
+        background-color: #010602;
+        margin: 0 auto;
+        padding: 10px 50px;
+        border-radius: 20px;
+      }
+
+      .widh-img {
+        width: 200px;
+        height: 150px;
+        margin: 10px 0 0 40px;
+      }
+      .p-border {
+        border: 1px solid white;
+        padding: 15px;
+      }
+      .coded-by {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 80px;
+      }
+      em:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body-back">
+      <h1>A projector photoshoot</h1>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/078/original/marcus-urbenz-36awG6GeAoI-unsplash.jpg?1656577991"
+        alt="projector photography"
+        width="70%"
+        class="maine-photo"
+      />
+
+      <img
+        class="widh-img"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/080/original/rm25J.jpg?1656581400"
+        alt="projector photography"
+      />
+      <img
+        class="widh-img"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/081/original/2_4_orig.jpg?1656581409"
+        alt="projector photography"
+      />
+      <img
+        class="widh-img"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/082/original/979aaf53337503.59307b1807721.jpg?1656581432"
+        alt="projector photography"
+      />
+
+      <p class="p-border">
+        A projector photoshoot involves projecting an image onto your subject
+        with the use of light. Projector photoshoots are a fun, creative, and
+        endlessly adjustable approach to modern portraits. All you need for the
+        photos of your dreams is to subscribe to a photo shoot with me and have
+        fun!👇
+      </p>
+      <button>I want a projector photoshoot</button>
+      <p class="coded-by">Coded by <em> Tanya Gvozdyova </em></p>
+    </div>
+    <script>
+      function request() {
+        let name = prompt("Okay, I'd like to meet you. What is your name?");
+        let number = prompt("What is your phone number?");
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "Great, " + name + "! I'll call you during the day.";
+      }
+      let iWantButton = document.querySelector("button");
+      iWantButton.addEventListener("click", request);
+    </script>
+  </body>
+</html>
